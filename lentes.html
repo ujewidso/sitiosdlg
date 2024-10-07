@@ -1,0 +1,72 @@
+<html>
+    <head>
+<title>SDLG</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="estilos.css">
+        <center><H1>LENTES PARA TODOS</H1></center>
+        <h2>Objetivo:</h2>
+        <h3>Mejorar la calidad de vida y el rendimiento académico de los estudiantes 
+            que tienen problemas de visión, pero no pueden acceder a corrección óptica 
+            por razones económicas.<br>
+            Mejorar el aprendizaje.<br>
+            Promover la salud visual.<br>
+            Reducir el ausentismo y las distracciones.
+            </h3>
+        <h2>Responsables del proyecto:</h2>
+        <h3>Nazario Hernández Reyes<br> 
+            Adriana Martínez Esparza 
+            </h3>
+            <h2>Proceso o etapas para llevar a cabo el mismo:</h2>
+            <h3>Investigación y planificación.<br>
+                Llenar formulario.<br>
+                Determinar numero de personas.<br>
+                Evaluación de salud visual(examen de vista).<br>
+                Determinar el costo.<br>
+                Realizar actividades para obtener ingresos.<br>
+                Entrega de lentes.
+                </h3>
+
+                <script language="javascript" type="text/javascript">
+                    var SeceunciaID=null
+                    var imagen=0
+                    var duracion=5000
+                    {imagenes=new CreaArray(8)
+                     imagenes[1].src="co1.jpg"
+                     imagenes[2].src="co2.jpg"
+                     imagenes[3].src="co3.jpg"
+                     imagenes[4].src="co4.jpg" 
+                     imagenes[5].src="co5.jpg" 
+                     imagenes[6].src="co6.jpg" 
+                     imagenes[7].src="co7.jpg" 
+                     imagenes[8].src="co8.jpg"   
+                    }
+                    function CreaArray(n){
+                     this.length=n
+                     for(var i=1;i<=n;i++){
+                       this[i]=new Image() 
+                     }  
+                     return this 
+                    }
+                    function MostrarSecuencia(){
+                     {   
+                     document.images["secuencia"].src=imagenes[imagen].src
+                     imagen++
+                     if(imagen==9){
+                      imagen=1
+                     }   
+                    }
+                    SecuenciaID=setTimeout("MostrarSecuencia()",duracion)
+                    SecuenciaEjecutandose=true
+                   }
+                   function IniciarSecuencia(){
+                    imagen=1
+                    MostrarSecuencia()
+                   }
+                   </script>
+                   <body onload="IniciarSecuencia()">
+                    <center><H1>Comic</H1><BR>
+                    <p><img src="logo.jpg" id="imagen" alt="Secuencia" name="secuencia"
+                     width="750" height="550" border=5></p>            
+    </body>
+</html>
