@@ -1,75 +1,89 @@
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #222; 
-    color: #eee; 
+  font-family: 'Roboto', sans-serif; /* Roboto para un aspecto moderno */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Fondo gris claro */
+  color: #222; /* Texto gris oscuro */
 }
 
 h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    text-shadow: 2px 2px 5px #000; 
-    color: #f00; 
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3em;
+  color: #ff0000; /* Rojo */
+  text-shadow: 0 0 5px #ff0000; /* Sombra roja */
 }
 
 form {
-    background-color: #333; 
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    width: 400px;
-    position: relative; 
+  background-color: #fff; /* Fondo blanco */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 400px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ff8c00; /* Naranja */
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #eee; 
-    border-radius: 3px;
-    box-sizing: border-box;
-    background-color: #111; 
-    color: #eee; 
-    font-weight: bold; 
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Borde gris claro */
+  border-radius: 5px;
+  background-color: #f8f8f8; /* Fondo gris claro suave */
+  color: #333; /* Texto gris oscuro */
+  font-weight: bold;
+}
 
-input::placeholder { 
-    color: #888; 
-    font-weight: bold;
+input::placeholder {
+  color: #999; /* Gris tenue para el placeholder */
 }
 
 button[type="submit"] {
-    background-color: #f00; 
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold;
+  background-color: #ffff00; /* Amarillo */
+  color: #000; /* Negro */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+  box-shadow: 0 0 10px #ffff00; /* Sombra amarilla */
 }
 
 button[type="submit"]:hover {
-    background-color: #b00; 
+  background-color: #e6e600; /* Amarillo más oscuro */
+  box-shadow: 0 0 20px #ffff00; /* Sombra amarilla más grande */
+}
+
+/* Estilos adicionales para el arcoíris */
+.rainbow-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.rainbow-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.success-message {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #00b050; /* Verde */
 }
 
 
-form::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3; 
-    pointer-events: none;
-}
+
